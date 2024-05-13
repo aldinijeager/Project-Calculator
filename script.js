@@ -34,6 +34,11 @@ function operate(num1, num2, operator){
 }
 
 let display = "";
+    display + 1;
 
 let numButtons = document.querySelectorAll(".numbers button");
 let screenDisplay = document.querySelector(".screen");
+
+numButtons.forEach(button => {
+    button.addEventListener("click", () => display += button.value)
+});
