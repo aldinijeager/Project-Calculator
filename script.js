@@ -34,3 +34,6 @@ function operate(num1, num2, operator){
 }
 
 let display = "";
+
+let numButtons = document.querySelectorAll(".numbers button");
+let screenDisplay = document.querySelector(".screen");
