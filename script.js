@@ -11,6 +11,6 @@ function divide(a, b){
     return a / b;
 }
 
-let firtsNum,
-    secondNum,
+let num1,
+    num2,
     operator;
