@@ -40,8 +40,7 @@ let screenDisplay = document.querySelector(".screen");
 
 numButtons.forEach(button => {
     button.addEventListener("click", () => {
-        display += button.value;
-        screenDisplay.textContent = display;
+        screenDisplay.textContent += button.value;
     })
 });
 
@@ -66,7 +65,6 @@ optionButtons.forEach(button => {
             case "divide":
                 screenDisplay.textContent += "/";
                 break;
-                
             
         }
     })
