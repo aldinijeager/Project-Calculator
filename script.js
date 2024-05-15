@@ -44,3 +44,16 @@ numButtons.forEach(button => {
         screenDisplay.textContent = display;
     })
 });
+
+let optionButtons = document.querySelectorAll(".options button");
+
+optionButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        switch(button.value){
+            case "clear":
+                screenDisplay.textContent = "0";
+                console.log(button.value)
+                break;
+        }
+    })
+});
