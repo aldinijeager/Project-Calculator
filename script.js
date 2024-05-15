@@ -54,6 +54,20 @@ optionButtons.forEach(button => {
                 screenDisplay.textContent = "0";
                 console.log(button.value)
                 break;
+            case "add":
+                screenDisplay.textContent += "+";
+                break;
+            case "subtract":
+                screenDisplay.textContent += "-";
+                break;
+            case "multiply":
+                screenDisplay.textContent += "*";
+                break;
+            case "divide":
+                screenDisplay.textContent += "/";
+                break;
+                
+            
         }
     })
 });
