@@ -40,8 +40,9 @@ let screenDisplay = document.querySelector(".screen");
 
 numButtons.forEach(button => {
     button.addEventListener("click", () => {
-        screenDisplay.textContent += button.value;
-    })
+        if(screenDisplay.textContent == "0") screenDisplay.textContent = button.value;
+        else screenDisplay.textContent += button.value;
+    });
 });
 
 let optionButtons = document.querySelectorAll(".options button");
